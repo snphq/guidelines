@@ -1,5 +1,7 @@
 # [Salt & Pepper](http://saltpepper.ru) guidelines
+> Небольшие советы и рекомендации для разработчиков
 
-## License
+## Гайдлайны
 
-This repository is under MIT license. See [LICENSE](LICENSE) file for details.
+* [Ruby](guides/ruby.md)
+* [Ruby on Rails](guides/ruby_on_rails.md)
