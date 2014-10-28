@@ -29,3 +29,22 @@ userData = {
   age: getUserAge()
 }
 ```
+* Описывая обработчики событий, помните, что в coffeescript всё возвращает значение, даже если это не указано явно. В браузере для обработчиков некоторых событий действует правило, согласно которому, если функция-обработчик возвращает `false`, для данного события отменяется реакция браузера по умолчанию ([подробнее про действие по умолчанию](http://learn.javascript.ru/default-browser-action)).
+```coffeescript
+# Данный код содержит side effect
+someStatusVar = true
+($ '.pretty-and-long-selector-for-our-element').on
+  click: ->
+    someStatusVar = false 
+    # значение последнего выражения в строке равно false
+    # данная функция вернет false,
+    # что приведет к отмене действия по умолчанию
+
+#  Исправленный вариант
+someStatusVar = true
+($ '.pretty-and-long-selector-for-our-element').on
+  click: ->
+    someStatusVar = false
+    true 
+    # можно вернуть все, что угодно, кроме false
+```
