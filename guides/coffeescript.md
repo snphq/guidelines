@@ -54,3 +54,17 @@ someStatusVar = true
     true 
     # можно вернуть все, что угодно, кроме false
 ```
+
+* C версии 1.3 Backbone.js позволяет испольльзовать красивый синксис `class` 
+для создания новых сущностей
+
+```coffeescript
+# вместо 
+NewView = Backbone.View.extend
+  initialize: ->
+    Backbone.View.initialize.apply this, arguments
+# пишем
+class NewView extends Backbone.View
+  initialize: ->
+    super
+```
