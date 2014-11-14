@@ -79,9 +79,10 @@
   ```bash
   cd $PROJECT_PATH
   git init
-  git branch master
-  git config gitflow.branch.master 'master'
-  git config gitflow.branch.develop 'develop'
+  touch README.md
+  git add .
+  git commit -am "Init commit"
+  git checkout -b develop
   git config gitflow.prefix.versiontag 'r/'
   git flow init -d
   ```
@@ -94,8 +95,6 @@
   ```bash
   cd $PROJECT_PATH
   git clone $GIT_REPOSITORY ./
-  git config gitflow.branch.master 'master'
-  git config gitflow.branch.develop 'develop'
   git config gitflow.prefix.versiontag 'r/'
   git flow init -d
   ```
