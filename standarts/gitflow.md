@@ -79,9 +79,7 @@
   ```bash
   cd $PROJECT_PATH
   git init
-  touch README.md
-  git add .
-  git commit -am "Init commit"
+  # создание вашего первого коммита
   git checkout -b develop
   git config gitflow.prefix.versiontag 'r/'
   git flow init -d
