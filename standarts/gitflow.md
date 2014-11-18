@@ -74,7 +74,7 @@
 
 ## 4. User Stories
 
-Для упрощения работы можно использовать утилиту [Git
+Для упрощения работы нужно использовать утилиту [Git
 Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html). 
 
 ### 4.1. Создание нового проекта
@@ -118,18 +118,8 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   `$FEATURE_BRANCH` - краткое описание изменений. Например: 
   9568_add_borsch_contest
 
-  **Режим git-flow**:
-
   ```bash
   git flow feature start $FEATURE_BRANCH
-  ```
-
-  **Ручной режим**:
-
-  ```bash
-  git checkout develop
-  git pull --rebase
-  git checkout -b feature/$FEATURE_BRANCH
   ```
 
   2. Выполняем задачу создавая коммиты в текущую ветку
@@ -185,19 +175,11 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
 
   `$FEATURE_BRANCH` - краткое описание изменений. Например: 9568_add_borsch_contest
 
-  **Режим git-flow**:
-
   ```bash
-  git checkout feature/$FEATURE_BRANCH
-  git flow feature finish
-  ```
-
-  **Ручной режим**:
-
-  ```bash
-  git checkout $FEATUTRE_BRANCH
-  git pull
   git checkout develop
   git pull
-  git merge --no-ff $FEATUTRE_BRANCH
+  git checkout feature/$FEATURE_BRANCH
+  git pull
+  git flow feature finish
   ```
+ 
