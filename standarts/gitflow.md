@@ -96,8 +96,8 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   `$PROJECT_PATH` - папка для нового проекта
 
   ```bash
+  git clone $GIT_REPOSITORY
   cd $PROJECT_PATH
-  git clone $GIT_REPOSITORY ./
   git config gitflow.prefix.versiontag 'r/'
   git flow init -d
   ```
