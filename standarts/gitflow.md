@@ -166,6 +166,8 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   git push -f origin master
   ```
 
+  Подробнее о rebase 
+  [здесь](http://git-scm.com/book/ru/v1/%D0%92%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-Git-%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5).
 ### 5.5. Необходимо **срочно** разработать дополнительный функционал к проекту
 
   1. Сохраняем все во временное хранилище
