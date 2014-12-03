@@ -214,7 +214,7 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   4. Сливаем релизную ветку с `master` и `develop` и удаляем.
 ```bash
   git flow release start $RELEASE_NAME # $RELEASE_NAME = <year><month><day>
-  git flow release publish $RELEASE_NAME # публикация релиза на origin 
+  git push -u origin release/$RELEASE_NAME  # публикация релиза на origin 
   # внесение правок в релиз, если нужно
   git flow release finish $RELEASE_NAME
 ```
