@@ -4,11 +4,12 @@
 ## Гайдлайны
 
 * [Общие](guides/common.md)
-* [Ruby](guides/ruby.md)
-* [Ruby on Rails](guides/ruby_on_rails.md)
-* [CoffeeScript](guides/coffeescript.md)
-* [Clientside](guides/clientside.md)
 * [Редакторы кода](guides/editors.md)
+* Backend
+  * [Ruby](guides/ruby.md)
+  * [Ruby on Rails](guides/ruby_on_rails.md)
+* [Frontend](guides/frontend.md)
+  * [CoffeeScript](guides/coffeescript.md)
 
 ## Стандарты
 
