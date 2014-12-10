@@ -9,3 +9,7 @@
 * [Coffeescript](guides/coffeescript.md)
 * [Clientside](guides/clientside.md)
 * [Редакторы кода](guides/editors.md)
+
+## Стандарты
+
+* [S&P Git Flow](standarts/gitflow.md)
