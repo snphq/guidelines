@@ -13,3 +13,12 @@
 ## Стандарты
 
 * [S&P Git Flow](standarts/gitflow.md)
+
+# Поддержка
+
+Данный список ведётся и поддерживается компанией [Salt & Pepper](http://saltpepper.ru). Другие наши открытые проекты вы 
+можете найти на нашем аккаунте на [Github](https://github.com/snphq).
+
+![Salt & Pepper](http://saltpepper.ru/common/img/logo.png)
+
+Отдельное спасибо @BondarAnton, @donbobka, @maximkoretskiy, @sponomarev.
