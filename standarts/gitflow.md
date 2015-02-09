@@ -1,5 +1,8 @@
 # S&P Git Flow
-> Рекомендованная схема ведения git репозитория
+> Рекомендованная схема ведения git репозитория.  
+> Данный материал не является учебником по использованию git и предполагает, 
+> что читающий уже знаком с git. Список материалов для изучения git можно 
+> посмотреть [здесь](standarts/git_tutorials.md).
 
 ## 1. Словарь терминов
 
@@ -214,9 +217,9 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   
   4. Сливаем релизную ветку с `master` и `develop` и удаляем её.
 
-```bash
-  git flow release start $RELEASE_NAME # $RELEASE_NAME = <year><month><day>
-  git push -u origin release/$RELEASE_NAME  # публикация релиза на origin 
-  # внесение правок в релиз, если нужно
-  git flow release finish $RELEASE_NAME
-```
+  ```bash
+    git flow release start $RELEASE_NAME # $RELEASE_NAME = <year><month><day>
+    git push -u origin release/$RELEASE_NAME  # публикация релиза на origin 
+    # внесение правок в релиз, если нужно
+    git flow release finish $RELEASE_NAME
+  ```
