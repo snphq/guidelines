@@ -120,7 +120,7 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
 
 ### 5.3. Вы приступаете к работе на проекте первый раз за день
 
-  2. Обновляем `develop` ветку локального репозитория.
+Обновляем `develop` ветку локального репозитория.
 
   ```bash
   git checkout develop
