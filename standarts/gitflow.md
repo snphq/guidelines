@@ -161,8 +161,8 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   
   ```bash
   git fetch origin
-  git rebase origin/master
-  git push -f origin master
+  git rebase origin/develop
+  git push -f origin develop
   ```
   
     **Важно!**
