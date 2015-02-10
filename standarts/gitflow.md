@@ -155,17 +155,19 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   отступов. Также старайтесь не оставлять закомментированный код, который 
   не будет использоваться в дальнейшем, и вызовы отладочных логов в консоль.
 
-  3. Как можно чаще синхронизируемся с веткой `origin/develop`
+  3. Как можно чаще синхронизируемся с веткой `origin/develop` с помощью rebase
 
-  **Важно!**
-  Не выполняйте данный пункт, если над веткой работает более одного человека 
-  или от вашей ветки созданы другие ветки
+
   
   ```bash
   git fetch origin
-  git rebase origin/master
-  git push -f origin master
+  git rebase origin/develop
+  git push -f origin develop
   ```
+  
+    **Важно!**
+  Не выполняйте данный пункт, если над веткой работает более одного человека 
+  или от вашей ветки созданы другие ветки 
   
   Подробнее о rebase 
   [здесь](http://git-scm.com/book/ru/v1/Ветвление-в-Git-Перемещение).
@@ -178,7 +180,7 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   git add --all && git stash
   ```
 
-  2. Смотреть пункт 4.4
+  2. Выполняем действия из пункта 5.4
 
   3. Возвращаем изменения из временного хранилища
 
