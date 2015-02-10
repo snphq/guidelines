@@ -178,7 +178,7 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
   git add --all && git stash
   ```
 
-  2. Смотреть пункт 4.4
+  2. Выполняем действия из пункта 5.4
 
   3. Возвращаем изменения из временного хранилища
 
