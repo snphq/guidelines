@@ -12,7 +12,7 @@
 
 ## Стандарты
 
-* [S&P Git Flow](standarts/gitflow.md)
+* [S&P Git Flow](standards/gitflow.md)
 
 # Поддержка
 
