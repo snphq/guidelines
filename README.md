@@ -6,9 +6,9 @@
 * [Общие](guides/common.md)
 * [Редакторы кода](guides/editors.md)
 * Backend
-  * [Ruby](guides/ruby.md)
+  * [Ruby](guides/backend/ruby.md)
 * [Frontend](guides/frontend.md)
-  * [CoffeeScript](guides/coffeescript.md)
+  * [CoffeeScript](guides/frontend/coffeescript.md)
 
 ## Стандарты
 
