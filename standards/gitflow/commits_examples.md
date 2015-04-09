@@ -5,22 +5,22 @@
 * Пришла задача на разработку нового функционала - страницы новостей.  
 
   Коммиты:
-  + `Add news: page #31337`
-  + `Add news: menu link`
-  + `Add news: items list markup and render`
-  + `Add news: items list styles`
-  + `Add news: item view page markup, render + styles`
+  + `Add news page #31337`
+  + `Add menu link on news page`
+  + `Add items list markup and render on news page`
+  + `Add items list styles on news page`
+  + `Add item view page markup, render + styles on news page`
   
 * Заказчик попросил изменить размер картинки в анонсе новости
 
-  `Change news: anounce image size #31339`
+  `Change anounce image size #31339`
     
 * Пришли замечания, касающиеся отображения нового раздела в Netscape Navigator 
 %).
 
-  `Fix news: display inline render bug in netscape navigator #33334`
+  `Fix display inline render bug in netscape navigator #33334`
 
 * Обновилось api — теперь есть возможность осуществить постраничную навигацию 
 по проекту.
 
-  `Add news: pagination logic`
+  `Add news pagination logic`
