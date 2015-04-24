@@ -232,7 +232,7 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
 `develop`;
   ```bash
     git checkout release/$RELEASE_NAME
-    git merge develop
+    git merge develop --ff
   ```
   
   5. При создания нового релиза закрываем текущий: cливаем релизную ветку с `master` и `develop` и удаляем её.
