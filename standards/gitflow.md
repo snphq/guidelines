@@ -217,18 +217,27 @@ Flow](http://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html).
 ### 5.7. Дополнительный функционал готов к деплою на боевой сервер
 
   1. Создаем релизную ветку `release/<year><month><day>`;
+    ```bash
+      git flow release start $RELEASE_NAME # $RELEASE_NAME = <year><month><day>
+      git push -u origin release/$RELEASE_NAME  # публикация релиза на origin 
+    ```
   
   2. Проверяем работоспособность внесенных изменений на боевом сервере;
   
   3. Вносим правки в релизную ветвь; повторяем пункты 2 и 3 до момента, пока все
   недоработки не будут исправлены;
+
+  4. Если в течении того же дня в develop вливаются улучшения, которые так
+же нужно задеплоить на боевой серевер, необходимо в текущую релизную ветвь влить  
+`develop`;
+  ```bash
+    git checkout release/$RELEASE_NAME
+    git merge develop --ff
+  ```
   
-  4. Сливаем релизную ветку с `master` и `develop` и удаляем её.
+  5. При создания нового релиза закрываем текущий: cливаем релизную ветку с `master` и `develop` и удаляем её.
 
   ```bash
-    git flow release start $RELEASE_NAME # $RELEASE_NAME = <year><month><day>
-    git push -u origin release/$RELEASE_NAME  # публикация релиза на origin 
-    # внесение правок в релиз, если нужно
     git flow release finish $RELEASE_NAME
   ```
 
