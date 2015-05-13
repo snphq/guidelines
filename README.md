@@ -21,4 +21,4 @@
 
 ![Salt & Pepper](http://saltpepper.ru/common/img/logo.png)
 
-Отдельное спасибо @BondarAnton, @donbobka, @maximkoretskiy, @sponomarev.
+Отдельное спасибо [@BondarAnton](https://github.com/BondarAnton), [@donbobka](https://github.com/donbobka), [@maximkoretskiy](https://github.com/maximkoretskiy), [@sponomarev](https://github.com/sponomarev).
