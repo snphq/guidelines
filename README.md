@@ -7,6 +7,7 @@
 * [Редакторы кода](guides/editors.md)
 * Backend
   * [Ruby](guides/backend/ruby.md)
+  * [Rails](guides/backend/rails.md)
 * [Frontend](guides/frontend.md)
   * [CoffeeScript](guides/frontend/coffeescript.md)
 
