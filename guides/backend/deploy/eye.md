@@ -105,8 +105,8 @@
 
 8. Добавьте в cron
 
-  ```bash
-  @reboot /usr/bin/env eye load YOUR_APP/eye/produciton.eye
+  ```
+  @reboot /usr/bin/env eye load /var/www/your_app_name/ss/current/config/eye/production.eye
   ```
 
 ## DEPLOY & ENJOY !!!
