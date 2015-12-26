@@ -29,7 +29,7 @@
   `config/eye/common.rb`
 
   ```ruby
-  ROOT = '/var/www/your_app_name/ss'
+  ROOT = '/var/www/YOUR_APP_NAME/ss'
   CURRENT = File.expand_path(File.join(ROOT, %w{current}))
   SHARED = File.expand_path(File.join(ROOT, %w{shared}))
   LOGS = File.expand_path(File.join(ROOT, %w{shared log}))
@@ -40,7 +40,7 @@
     logger_level Logger::ERROR
   end
 
-  Eye.application 'application_name' do
+  Eye.application 'APPLICATION_NAME' do
     env 'RAILS_ENV' => RAILS_ENV
     working_dir CURRENT
     triggers :flapping, :times => 10, :within => 1.minute
@@ -106,7 +106,7 @@
 8. Добавьте на сервер приложения в cron
 
   ```
-  @reboot /usr/bin/env eye load /var/www/your_app_name/ss/current/config/eye/YOUR_ENV.eye
+  @reboot /usr/bin/env eye load /var/www/YOUR_APP_NAME/ss/current/config/eye/YOUR_ENV.eye
   ```
 
 ## DEPLOY & ENJOY !!!
