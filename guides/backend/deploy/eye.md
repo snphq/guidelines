@@ -1,27 +1,30 @@
 # Eye
 
+> Eye является инструментом мониторинга процессов. Вдохновленный от BluePill и Богом.
+
+
 ## Настройка
 
-1 Первым делом добавляем в `Gemfile`
+1. Первым делом добавляем в `Gemfile`
 
   ```ruby
   gem 'eye'
   gem 'capistrano-eye'
   ```
   
-2 Добавляем в `Capfile`
+2. Добавляем в `Capfile`
 
   ```ruby
   require 'capistrano/eye'
   ```
 
-3 Добавляем в `config/deploy.rb`
+3. Добавляем в `config/deploy.rb`
 
   ```ruby
   set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
   ``` 
 
-4 Создаем в config папку eye затем добавляем и настроиваем конфигурационные файлы
+4. Создаем в `config` папку eye затем добавляем и настроиваем конфигурационные файлы
 
   `config/eye/common.rb`
 
@@ -86,19 +89,24 @@
   Eye.load('common.rb')
   ```
 
-5 В `config/deploy/production.rb` добавляем
+5. В `config/deploy/production.rb` добавляем
 
   ```ruby
   set :eye_config, -> { 'config/eye/production.eye' }
   ```
 
-6 В `config/deploy/testing.rb` добавляем
+6. В `config/deploy/testing.rb` добавляем
 
   ```ruby
   set :eye_config, -> { 'config/eye/testing.eye' }
   ```  
 
-7 Из `Capfile` убираем `capistrano/puma` и `capistrano/sidekiq`
+7. Из `Capfile` убираем `capistrano/puma` и `capistrano/sidekiq`
 
+8. Добавьте в cron
+
+  ```bash
+  @reboot /usr/bin/env eye load YOUR_APP/eye/produciton.eye
+  ```
 
 ## DEPLOY & ENJOY !!!
