@@ -103,10 +103,10 @@
 
 7. Из `Capfile` убираем `capistrano/puma` и `capistrano/sidekiq`
 
-8. Добавьте в cron
+8. Добавьте на сервер приложения в cron
 
   ```
-  @reboot /usr/bin/env eye load /var/www/your_app_name/ss/current/config/eye/production.eye
+  @reboot /usr/bin/env eye load /var/www/your_app_name/ss/current/config/eye/YOUR_ENV.eye
   ```
 
 ## DEPLOY & ENJOY !!!
