@@ -91,7 +91,7 @@
     source ~/.bashrc
     nvm install 0.10.36
     nvm alias stable 0.10.36
-    npm install phantomjs -g
+    npm install phantomjs@1.8.1-3 -g
     git clone https://github.com/donbobka/siteshot/
     cd siteshot
     git checkout feature/add_page_modifier
