@@ -8,6 +8,8 @@
 * Backend
   * [Ruby](guides/backend/ruby.md)
   * [Rails](guides/backend/rails.md)
+  * Deploy
+    * [Eye](guides/backend/deploy/eye.md)
 * [Frontend](guides/frontend.md)
   * [CoffeeScript](guides/frontend/coffeescript.md)
 
