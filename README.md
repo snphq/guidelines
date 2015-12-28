@@ -8,6 +8,8 @@
 * Backend
   * [Ruby](guides/backend/ruby.md)
   * [Rails](guides/backend/rails.md)
+  * Social
+    * [Siteshot](guides/backend/social/siteshot.md)
 * [Frontend](guides/frontend.md)
   * [CoffeeScript](guides/frontend/coffeescript.md)
 
