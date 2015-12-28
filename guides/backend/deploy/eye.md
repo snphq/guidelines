@@ -45,6 +45,11 @@
     working_dir CURRENT
     triggers :flapping, :times => 10, :within => 1.minute
 
+    if File.exist? File.join(working_dir, 'Gemfile')
+      clear_bundler_env
+      env 'BUNDLE_GEMFILE' => File.join(working_dir, 'Gemfile')
+    end
+
     process :puma do
       daemonize true
       pid_file "#{PIDS}/puma.pid"
