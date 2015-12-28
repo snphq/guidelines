@@ -7,7 +7,7 @@
 `Siteshot` использует xml файл со списком страничек для которых нужно сделать снапшоты, поэтому первым делом на нужно добавить и настроить генератор карты сайта, для этого мы будем использовать гем `sitemap_generator`
 И еще нам потребуется `whenever` для добавления задач в крон а в данном случае для ротации xml файла.
 
-## Установка `sitemap_generator`
+### Установка `sitemap_generator`
 
   1. Добавляем в `Gemfile`
 
@@ -79,7 +79,7 @@
 
     После этого мы видим в `public/system/sitemap.xml.gz`
 
-  ### Поздравляю вы настроили `sitemap_generator` а так же ротацию !!!
+  * Поздравляю вы настроили `sitemap_generator` а так же ротацию
 
 ### Siteshot
 
@@ -103,7 +103,7 @@
 
     ```
     mkdir /var/www/APPLICATION_NAME/shadow-copy
-     ```
+    ```
 
   3. В `shadow-copy` создаем конфигурационные файлы
 
@@ -184,6 +184,10 @@
         rewrite ^ /index.html break;
       }
     }
+    ```
+
+    ```
+    sudo service nginx restart
     ```
 
  # THAT'S ALL !!!
